@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <title>Coffee&Craic</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,3 +41,124 @@
 
 </body>
 </html> 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<title>TEST FORM COFFEE</title>
+	</head>
+	<body>
+
+		<form action="coffee_shop.php">
+			<label for="shop_name">Shop Name:</label>
+			<input type="text" id="shop_name" name="shop_name" placeholder="">
+			<!-- id and name attributes good to have the same name-->
+			<!-- place holder is a grey text to give example of format, good for phone numbers and emails too -->
+
+			<br>
+			<br>
+
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name" placeholder="Star">
+
+			<br>
+			<br>
+
+			<label for="title">Type:</label>
+
+			<label for="takeaway.">Takeaway</label>
+			<input type="radio" value="takeaway," id="takeaway." name="title">
+			<label for="dine_in">Dine In</label>
+			<input type="radio" value="dine_in," id="dine_in" name="title">
+			<!-- without name='title', all options could be selected -->
+
+			<br>
+			<br>
+
+			<label for="payment">Payment:</label>
+
+			<select id="payment">
+				<option value="visa">Visa</option>
+				<option value="mastercard">Master Card</option>
+				<option value="giftcard">Gift Card</option>
+				<option value="cheque">Cheque</option>
+				
+			</select>
+			<br>
+			<br>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"
+			placeholder="pstar@gmail.com">
+			
+			<br>
+			<br>
+			
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" min="2004-01-01">
+			<!-- min allows limits, eg to make sure over 18 -->
+
+			<br>
+			<br>
+
+			<label for="quanitity">Quantity:</label>
+			<input type="number" id="quanitity "name="quanitity" min="0" max="99" value="1">
+			<!-- min & max allows limits, eg not negative and not above inventory
+				value, puts a minimum amount -->
+
+			<br>
+			<br>
+
+			<label for="phone">Phone #:</label>
+			<input type="tel" id="phone" name="phone" placeholder="+xx-xxxx-xxxxxx">
+
+			<br>
+			<br>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"
+			maxlength="12">
+			max 12 characters
+			<!-- hides the characters typed in -->
+
+
+			<br>
+			<br>
+
+			<label for="rate_us">Rate Us:</label>
+			1<input type="range" step="25" value="100">5
+			<!-- step value is divisable by 100 (including 0)
+				eg how many 25s into 100, 0,25,50,75,100 means 5 stops
+			 	how many 25s into 100, 0,20,40,60,80,100 means 6 stops
+
+			 	value sets the default (where is starts)-->
+			
+			<br>
+			<br>
+
+			<label for="subscribe">Subscribe</label>
+			<input type="checkbox" id="subscribe" name="subscribe">
+			
+			<br>
+			<br>
+
+			<label for="myfile">Upload a File:</label>
+			<input type="file" id="myfile" name="myfile">
+			
+			<br>
+			<br>
+
+			<input type="reset">
+
+			<br>
+			<br>
+
+			<input type="submit">
+			<!-- when hit submit, it will follow the 'action' of the form, in this case to 'Do_Something.php'-->
+		</form>
+		
+
+	</body>
+
+</html>
